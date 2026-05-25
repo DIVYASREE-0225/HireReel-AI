@@ -1,0 +1,6 @@
+{
+  "name": "HireReel AI",
+  "description": "Video-First AI-powered hiring platform allowing candidates to upload video resumes and recruiters to shortlist applying users with Gemini-powered skill match scoring.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
