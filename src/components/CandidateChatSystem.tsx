@@ -28,7 +28,8 @@ export default function CandidateChatSystem({
 
   // Initialize socket listener
   useEffect(() => {
-    socketRef.current = io(window.location.origin);
+    const apiBase = import.meta.env.VITE_API_URL || window.location.origin;
+    socketRef.current = io(apiBase);
     
     // Join private socket channel
     socketRef.current.emit("join_room", currentUserId);
